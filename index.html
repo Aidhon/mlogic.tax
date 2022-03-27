@@ -27,27 +27,26 @@
     h2 {margin-bottom: 0; color: #7e55f6;}
     hr {border-top: 1px solid #ede7fe; margin-top: 0; margin-bottom: 2px;}}
 
-    #hero {margin-left: 2%;}
-      @media screen and (min-width: 980px) {#hero {margin-left: 4%;}} 
-      @media screen and (min-width: 1080px) {#hero {margin-left: 8%;}} 
-      @media screen and (min-width: 1180px) {#hero {margin-left: 16%;}} 
-      @media screen and (min-width: 1380px) {#hero {margin-left: 24%;}} 
-    #hero p {color: #7e55f6; font-size: 1em; margin-top: 0;}
-    #intro {margin: 5% 1% 5% 2%;}
-      @media screen and (min-width: 980px) {#intro {margin: 4% 2% 5% 4%;}} 
-      @media screen and (min-width: 1080px) {#intro {margin: 3% 4% 5% 8%;}} 
-      @media screen and (min-width: 1180px) {#intro {margin: 3% 8% 5% 16%;}} 
-      @media screen and (min-width: 1380px) {#intro {margin: 3% 16% 5% 24%;}} 
-    #svc-eg {font-size: 0.8em;}
+    #main {margin-left: 2%; margin-right: 2%;}
+      @media screen and (min-width: 980px) {#main {margin-left: 4%; margin-right: 2%;}} 
+      @media screen and (min-width: 1080px) {#main {margin-left: 8%; margin-right: 8%;}} 
+      @media screen and (min-width: 1180px) {#main {margin-left: 16%; margin-right: 16%;}} 
+      @media screen and (min-width: 1380px) {#main {margin-left: 24%; margin-right: 24%;}} 
+
+    #hero p {color: #7e55f6; font-size: 1em; margin-top: 0;}  
+    #intro {margin-top: 5%;}
+    #svc-eg {font-size: 0.8em; background-color: #f9f3ff;}
     #svc-eg h3, p {margin-top: 0; margin-bottom: 0;}
-    .dsclmr {font-size: 0.6em;}
+    .dsclmr {margin: 10px 10px; font-size: 0.6em;}
     .label {padding: 6px; font-size: 0.7em; font-weight: bold;}
+    .button {background-color: #dbcffc; border: none; color: #505f69; padding: 5px; text-align: center; text-decoration: none; display: inline-block; margin: 5px 5px; cursor: pointer; border-radius: 18px;}
     .callout {background-color: #dbcffc;} 
-    .callout  a, a:link, a:visited {font-size: 0.8em; color: #505f69; text-decoration: none;} 
+    .callout  a, a:link, a:visited {color: #7e55f6; text-decoration: none;} 
     #contact {margin-top: 40px; font-size: 0.8em;}
-    footer {margin-top:  20px;}
-    #lgl-id {font-size:  0.5em;}
-    #ftr-brand {color: #7e55f6;}
+    footer {margin-top: 20px;}
+    #ftr-brand {font-size: 1.2em; color: #7e55f6;}
+    #lgl-id {font-size: 0.7em;}
+
   </style>
 
 </head>
@@ -58,6 +57,7 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<div id="main">
   <div id="hero">
     <h1>mlogic</h1>
     <p>Superpowers for your business...</p>
@@ -72,20 +72,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h3>オープニングバランス作成:</h3><p>€150〜</p><br>
       <h3>オランダ国内VAT申告:</h3><p>1回 €40〜</p><br>
       <h3>月次の事業会計とVAT申告:</h3><p>€40/月〜<p><br>
-      <h3>個人確定申告:</h3><p>€275〜</p><br>
+      <h3>個人確定申告:</h3><p>€275〜</p>
       <p class="dsclmr">*全ての料金はVAT抜き表示です。</p>
       <!--<p>すべてのサービスを見</p>-->
+      <!--<h2><span class="label callout"><a href="#contact">今すぐ問い合わせる！</a></span></h2>-->
+      <button class="button"><a href="#contact">今すぐ問い合わせる！</a></button>
+      <br>
   </div>
-
-  <div class="centered">
-      <h2><span class="label callout"><a href="#contact">今すぐ問い合わせる！</a></span></h2>
-  </div>
-
 
   <div id="contact" class="centered">
     <h2>お問い合わせ</h2>
     <script type="text/javascript" src="https://form.jotform.com/jsform/220851885751362"></script>
   </div>
+</div><!--main-->
 
   <footer class="centered">
     <hr id="hr100">
