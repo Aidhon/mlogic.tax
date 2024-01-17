@@ -3,106 +3,129 @@
 <html>  
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <!-- <link rel="icon" type="image/png" href="../img/on-logo.png"> -->
-  <title>mlogic: オランダ税金と会計</title> 
-  <meta name="description" content="mlogic（BECONナンバー所有）オランダ税務署公認オランダの税金/会計コンサルタントは税務会計サービスを提供します。フリーランサー、事業主、スタートアップ、オランダ支店、現地法人、被雇用者向け。" />  
-  <link rel="canonical" href="https://mlogic.tax">
-     
-  <style>
-    body {color: #505f69;}
-    img {max-width: 100%;}
-    .centered {text-align: center;}
-    hr {border-top: 1px solid #ede7fe; margin-top: 0; margin-bottom: 2px;}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<!-- <link rel="icon" type="image/png" href="../img/on-logo.png"> -->
+<title>mlogic: オランダ税金と会計</title> 
+<meta name="description" content="mlogic（BECONナンバー所有）オランダ税務署公認オランダの税金/会計コンサルタントは税務会計サービスを提供します。フリーランサー、事業主、スタートアップ、オランダ支店、現地法人、被雇用者向け。" />  
+<link rel="canonical" href="https://mlogic.tax">
 
-    #main {margin-left: 2%; margin-right: 2%;}
-      @media screen and (min-width: 980px) {#main {margin-left: 4%; margin-right: 2%;}} 
-      @media screen and (min-width: 1080px) {#main {margin-left: 8%; margin-right: 8%;}} 
-      @media screen and (min-width: 1180px) {#main {margin-left: 16%; margin-right: 16%;}} 
-      @media screen and (min-width: 1380px) {#main {margin-left: 24%; margin-right: 24%;}} 
-    
-    #hero h1 {color: #7e55f6; font-size: 1em; margin-top: 5px; margin-bottom: 0px;}  
-    
-    #intro {margin-top: 5%; font-size: 1em; margin-bottom: 15px; line-height: 1.6;}
-    
-    #callout {margin-bottom: 20px;}
-    .button {font-size: 0.8em; background-color: #cc33ff; opacity: 0.85; border: none; color: #505f69; padding: 5px; text-align: center; text-decoration: none; display: inline-block; margin: 5px 5px; cursor: pointer; border-radius: 18px;}
-    .button a, a:link, a:visited {color: #000; text-decoration: none;} 
+<style>
+body {color: #505f69; margin: 8px 0px 8px 0px;}
+img {max-width: 100%;}
+.centered {text-align: center;}
+hr {border-top: 1px solid #ede7fe; margin-top: 0; margin-bottom: 2px;}
 
-    #what {margin-bottom: 20px; line-height: 1.8;}
-    #what h2 {font-size: 1em; margin-bottom: 0;}
-    .svc-cat {background-color: #f9f3ff; padding: 3px; line-height: 0.6;}
-    .grid-container {display: grid; grid-template-columns: 33% 33% 33%; margin: 0; padding: 0px 5px 0px 5px;}
-    .grid-item {padding: 5px;}
-      @media screen and (max-width: 425px) {.grid-container {grid-template-columns: auto;}}
-    .grid-item h2 {margin-top: 0;} 
-    .grid-item p { margin-top: 5px; margin-bottom: 0px; padding-bottom: 10px;}
+.sidebar {height: 100%; width: 0; position: fixed; z-index: 1; top: 0; right: 0; background-color: white; overflow-x: hidden; transition: 0.1s;}
 
-    #ghits {padding-top: 5px; padding-bottom: 3px; font-size: 0.8em; background-color: rgb(251,251,251); margin-bottom: 30px;}
-    #ghits h2 {font-size: 1.2em; margin-top: 5px; margin-bottom: 0px;}
-    #ghits p {margin-top: 0; margin-bottom: 0;}
-    .dsclmr {margin: 10px 10px; padding-bottom: 5px; font-size: 0.75em;}
+.openbtn {padding: 8px 12px 8px 32px; font-size: 2em; position: absolute; top: 0; right: 10px; color: #7e55f6; background: none; border: none; z-index: 2;}
 
-    #why p {font-size: 1em; line-height: 1.8;}
+.sidebar .closebtn {font-size: 2.5em; position: absolute; top: 0; right: 10px; color: #7e55f6; background: none; border: none; z-index: 2;}
 
-    #contact {margin-top: 40px;}
-    footer {margin-top: 20px;}
-    #ftr-brand {font-size: 1.2em; color: #7e55f6;}
-    #lgl-id {font-size: 0.7em;}
-  </style>
+.sidebar a {padding: 8px 12px 8px 32px; text-decoration: none; font-size: 1.25em; color: #7e55f6; display: block; transition: 0.1s; text-align: right;}
+.sidebar a:hover {color: grey;}
+
+#msthd {margin-top: 60px;}
+#msthd h1 {color: #7e55f6; font-size: 1.2em; margin-top: 5px; margin-bottom: 0px;}   
+#intro p {padding-top: 35px; padding-bottom: 35px; font-size: 1em; margin-bottom: 15px; line-height: 2; background-color: #f9f3ff;}
+#callout {margin-bottom: 20px;}
+
+.svcs {margin-left: 2%; margin-right: 2%;}
+@media screen and (min-width: 980px) {.svcs {margin-left: 4%; margin-right: 2%;}} 
+@media screen and (min-width: 1080px) {.svcs {margin-left: 8%; margin-right: 8%;}} 
+@media screen and (min-width: 1180px) {.svcs {margin-left: 16%; margin-right: 16%;}} 
+@media screen and (min-width: 1380px) {.svcs {margin-left: 24%; margin-right: 24%;}} 
+
+.svcs {margin-bottom: 30px; line-height: 2;}
+.svcs h2 {font-size: 1.2em; margin-top: 0; margin-bottom: 5px; text-align: center;}
+.svcs h3 {font-size: 1em; margin-top: 5px; font-weight: normal;}
+.icons {margin-bottom: 0; color: red;}
+
+#contact {margin-top: 40px;}
+#contact h2 {font-size: 1.5em; margin-top: 0; margin-bottom: 0; text-align: center;}
+
+footer {margin-top: 20px;}
+#ftr-brand {font-size: 1.2em; color: #7e55f6;}
+#lgl-id {font-size: 0.7em;}
+</style>
 </head>
 
 <body>
-  <div id="main">
-    <div id="hero">
-      <h1><span style="font-size: 1.75em;">mlogic</span><br>オランダ税金と会計</h1>
-    </div>
 
-    <div id="intro" class="centered">
-      <p>簡単、格安、スピーディーな会計サービス<br>VAT申告、所得税申告を効率的に申告</p> 
-    </div>
+<div id="mySidebar" class="sidebar">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br><br><br>
+<a href="#btw" onclick="closeNav()">かんたんVAT申告</a>
+<a href="#ib" onclick="closeNav()">確定申告</a>
+<a href="#acnt" onclick="closeNav()">事業会計</a>
+<a href="#balans" onclick="closeNav()">オープニングバランス作成</a>
+<a href="#spot" onclick="closeNav()">スポット相談</a>
+<a href="#contact" onclick="closeNav()">お問い合わせ</a>
+</div>
 
-    <div id="callout" class="centered"><button class="button"><a href="#contact">今すぐ問い合わせる！</a></button></div> 
-  
-    <div id="what" class="grid-container">
-      <div class="grid-item">
-        <div class="svc-cat"><h2>個人事業主/フリーランサーのお客様</h2></div>
-        <p>簡単、効率的で安価な事業会計。<br>VATや所得税申告も日本語の質問に答えるだけで申告可。<br>オランダでの申告作業がはじめての方でも簡単、格安に申告できます。</p>
-      </div>   
-      <div class="grid-item">
-        <div class="svc-cat"><h2>VOF、BV、法人</h2></div>
-        <p>効率的な会計業務で安価にシンプルに申告します。</p>
-      </div>  
-      <div class="grid-item">
-        <div class="svc-cat"><h2>個人のお客様</h2></div>
-        <p>被雇用者対象の所得税申告。<br>日本語の質問に答えるだけで、簡単に申告できます。<br>もちろん該当する税金控除を適用します。</p>
-      </div>  
-    </div>  
-    
-    <div id="ghits" class="centered">     
-        <h2>オランダ国内VAT申告:</h2><p>1回 €40</p><br>
-        <h2>事業会計:</h2><p>€40/月〜<p><br>
-        <h2>個人確定申告:</h2><p>€275〜</p><br>
-        <h2>オープニングバランス作成:</h2><p>€150〜</p><br>
-        <p class="dsclmr">*全ての料金はVAT抜き表示です。</p>
-    </div>
+<button class="openbtn" onclick="openNav()">&#9776;</button>
 
-    <div id="why">
-      <p>mlogicはシンプルで効率的な会計業務ながら、BECONナンバー所有の日蘭事情に明るい経験豊富な会計士がすべての申告をチェックします。<br>システムのインターフェースは日本語なので、外国語読解のストレスなし。オランダ語は必要ありません。<br>個人情報取り扱いに厳格で、安心、安全です。</p>
-    </div>
+<div id="msthd" class="centered">
+<h1><span style="font-size: 1.8em;">mlogic</span><br>オランダ税金と会計</h1>
+</div>
 
-    <div id="contact" class="centered">
-       <script type="text/javascript" src="https://form.jotform.com/jsform/221751873126355"></script>
-    </div>
-  </div><!--main-->
+<div id="intro" class="centered">
+<p><span style="color: #cc33ff;">&#10004;</span>BECONナンバー所有オランダ会計オフィス<br><span style="color: #cc33ff;">&#10004;</span>豊富なキャリアの税務専門家チームがサポート<br><span style="color: #cc33ff;">&#10004;</span>カンタン、使いやすい日本語システム採用<br><span style="color: #cc33ff;">&#10004;</span>迅速な対応でストレスなし<br><span style="color: #cc33ff;">&#10004;</span>格安だけど確実な申告<br><span style="color: #cc33ff;">&#10004;</span>個人情報の漏洩なしで安全安心</p> 
+</div>
 
-  <footer class="centered">
-    <hr id="hr100">
-    <p id="ftr-brand">mlogic</p>
-    <p id="lgl-id">商工会議所登録番号: 85551430<br>
-    アムステルダム</p>
-  </footer>
+<div class="svcs" id="btw">
+<p class="icons centered"><img src="vat.png"></p>
+<h2>かんたんVAT申告</h2>
+<h3>日本語で簡単に行えるオランダVAT申告。「一律料金€40税抜」<br>弊社独自のシステムは、VATを申告する際の疑念や悩みを全て解消します。シンプルな質問に回答するだけで、VAT申告が完成。
+<br>申告ごとの一律料金のみで、月額や年間契約は不要です。ご希望の時にご利用いただけます。<br>「かんたんVAT申告」は弊社会計サービスを利用するかどうかに関わらずご利用いただけます。<br>また、EU-ICPおよびEU-OSS VAT申告サービスも別途提供しています。</h3>
+</div>
+
+<div class="svcs" id="ib">
+<p class="icons centered"><img src="income-tax.png"></p>
+<h2>確定申告</h2>
+<h3>事業主、雇用者、およびその配偶者/パートナー向けの所得税申告。<br>所得税プロフィールをオンラインで無料診断し、どのような所得税のコンポーネントがご自身のケースに必要とされるかを判断します。
+<br>適用可能なすべての税額控除を反映し、税金の過払いを防ぎます。二重課税回避も対応、<br>1申告：€275税抜~。パートナー割引あり。 <br>修正再申告、異議申立も承ります。</h3>
+</div>
+
+<div class="svcs" id="acnt">
+<p class="icons centered"><img src="accounting.png"></p>
+<h2>事業会計</h2>
+<h3>個人事業(eenmanszaak)、パートナーシップ(VOF)、法人(BV/NV)など、様々な事業規模の会計サポートを提供しています。<br>完全日本語システムを採用。詳細な定期レポートを通じて、事業パフォーマンスの把握が可能です。弊社の丁寧で正確な会計処理は、税務署や移民局での問題発生を未然に防ぎます。<br> ご自身のビジネスニーズとご予算に合わせてカスタマイズできる、経済的なサービス・プラン。必要に応じて、いつでもオプションの追加や削除が可能です。</h3>
+</div>
+
+<div class="svcs" id="balans">
+<p class="icons centered"><img src="financial-reports.png"></p>
+<h2>オープニングバランス作成</h2>
+<h3>個人事業主ビザ申請のオープニングバランスシート作成(€150税抜)。<br>ローン申請や賃貸契約のための各種会計書類、移民局への申請書類作成。【緊急対応可】</h3>
+</div>
+
+<div class="svcs" id="spot">
+<p class="icons centered"><img src="consulting.png"></p>
+<h2>スポット相談</h2>
+<h3>当局からのレターチェック、税務署への意義申し立て、事業登録、コンプライアンスなど、税金やビジネスに関する幅広い質問やご相談に対して、手ごろな価格で素早い回答を提供。</h3>
+</div>
+
+<div id="contact" class="centered">
+<h2>お問い合わせ</h2>
+<script type="text/javascript" src="https://form.jotform.com/jsform/221751873126355"></script>
+</div>
+
+<footer class="centered">
+<hr id="hr100">
+<p id="ftr-brand">mlogic</p>    
+<p id="lgl-id">商工会議所登録番号: 85551430<br>アムステルダム</p>
+</footer>
+
+<!-- Nav toggle -->
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementsByClassName("openbtn")[0].style.display = "none";
+}
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementsByClassName("openbtn")[0].style.display = "block";
+}
+</script>
 
 <!-- GTM -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -115,7 +138,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSB6DPJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End GTM (noscript) -->
-
 </body>
 
 </html>
